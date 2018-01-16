@@ -1,1 +1,11 @@
-﻿  EngineEntrega.vcxproj -> C:\Users\Kahuna\Desktop\Programacion\Repos\Oscar-Lima\Demo\Project\Demo\Debug\EngineEntrega.lib
+﻿  Task_Input.cpp
+  Task.cpp
+  Scene.cpp
+  Kernel.cpp
+  Entity.cpp
+  Component.cpp
+  Window.cpp
+  sdl_main.cpp
+  Generating Code...
+c:\users\alumno\documents\oscar-golph\engine\project\engineentrega\kernel.cpp(34): warning C4700: uninitialized local variable 'exit' used
+LINK : fatal error LNK1181: cannot open input file 'SDL2.lib'

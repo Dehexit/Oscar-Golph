@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -26,6 +26,7 @@
     <ClCompile Include="Kernel.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="Task.cpp" />
+    <ClCompile Include="Task_Input.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Headers\Window.hpp" />
@@ -34,13 +35,14 @@
     <ClInclude Include="Kernel.hpp" />
     <ClInclude Include="Scene.hpp" />
     <ClInclude Include="Task.hpp" />
+    <ClInclude Include="Task_Input.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{18262DD2-032B-49F0-8545-B283380B1EBC}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>EngineEntrega</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

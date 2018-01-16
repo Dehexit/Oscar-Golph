@@ -19,7 +19,7 @@ namespace engine
 
 	Window::~Window()
 	{
-		SDL_DestroyWindow(window);
+		SDL_DestroyWindow(this->window);
 	}
 
 }

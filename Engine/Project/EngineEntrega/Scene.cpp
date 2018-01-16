@@ -1,9 +1,10 @@
 #include "Scene.hpp"
-
+#include "Window.hpp"
 
 
 Scene::Scene()
 {
+
 }
 
 

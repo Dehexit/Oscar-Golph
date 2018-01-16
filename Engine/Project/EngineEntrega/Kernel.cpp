@@ -13,7 +13,11 @@ Kernel::~Kernel()
 {
 }
 
-//Desde donde se añaden las tasks?
+/*
+Desde donde se añaden las tasks? Se pueden hacer de forma dinámica? En tiempo de ejecución deberían
+poder modificarse las tareas? 
+*/
+
 void Kernel::add_task(Task * task)
 {
 
@@ -32,6 +36,7 @@ void Kernel::execute()
 		//Este loop recorre la lista de tareas que se hayan definido previamente?
 		for (auto * Task:tasks)
 		{
+			//Task->run()
 			std::cout << "HI" << std::endl; 
 		}
 	}

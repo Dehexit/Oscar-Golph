@@ -4,6 +4,7 @@
 #pragma once
 
 #include <string>
+#include <memory>
 
 struct SDL_Window;
 
@@ -13,7 +14,7 @@ namespace engine
 	class Window
 	{
 
-		SDL_Window * window;
+		SDL_Window *window;
 
 	public:
 
