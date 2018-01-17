@@ -14,7 +14,8 @@ namespace engine
 	class Window
 	{
 
-		SDL_Window *window;
+		SDL_Window *windowt;
+		const std::string wintitle;
 
 	public:
 

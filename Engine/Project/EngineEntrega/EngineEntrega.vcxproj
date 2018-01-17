@@ -19,23 +19,23 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Code\sdl_main.cpp" />
-    <ClCompile Include="..\..\Code\Window.cpp" />
-    <ClCompile Include="Component.cpp" />
-    <ClCompile Include="Entity.cpp" />
-    <ClCompile Include="Kernel.cpp" />
-    <ClCompile Include="Scene.cpp" />
-    <ClCompile Include="Task.cpp" />
-    <ClCompile Include="Task_Input.cpp" />
+    <ClInclude Include="..\..\Headers\Component.hpp" />
+    <ClInclude Include="..\..\Headers\Entity.hpp" />
+    <ClInclude Include="..\..\Headers\Kernel.hpp" />
+    <ClInclude Include="..\..\Headers\Scene.hpp" />
+    <ClInclude Include="..\..\Headers\Task.hpp" />
+    <ClInclude Include="..\..\Headers\Task_Input.hpp" />
+    <ClInclude Include="..\..\Headers\Window.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Headers\Window.hpp" />
-    <ClInclude Include="Component.hpp" />
-    <ClInclude Include="Entity.hpp" />
-    <ClInclude Include="Kernel.hpp" />
-    <ClInclude Include="Scene.hpp" />
-    <ClInclude Include="Task.hpp" />
-    <ClInclude Include="Task_Input.hpp" />
+    <ClCompile Include="..\..\Code\Component.cpp" />
+    <ClCompile Include="..\..\Code\Entity.cpp" />
+    <ClCompile Include="..\..\Code\Kernel.cpp" />
+    <ClCompile Include="..\..\Code\Scene.cpp" />
+    <ClCompile Include="..\..\Code\sdl_main.cpp" />
+    <ClCompile Include="..\..\Code\Task.cpp" />
+    <ClCompile Include="..\..\Code\Task_Input.cpp" />
+    <ClCompile Include="..\..\Code\Window.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
