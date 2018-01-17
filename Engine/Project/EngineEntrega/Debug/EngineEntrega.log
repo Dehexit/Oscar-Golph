@@ -1,9 +1,5 @@
-﻿  Task_Input.cpp
-  Task.cpp
-  Scene.cpp
-  Kernel.cpp
-  Entity.cpp
-  Component.cpp
+﻿  Kernel.cpp
   Generating Code...
-c:\users\alumno\desktop\gh\oscar-golph\engine\code\kernel.cpp(34): warning C4700: uninitialized local variable 'exit' used
-  EngineEntrega.vcxproj -> C:\Users\Alumno\Desktop\gh\Oscar-Golph\Demo\Project\Demo\Debug\EngineEntrega.lib
+  Skipping... (no relevant changes detected)
+  Scene.cpp
+  EngineEntrega.vcxproj -> C:\Users\Kahuna\Desktop\Programacion\Repositorios\Oscar-Golph\Demo\Project\Demo\Debug\EngineEntrega.lib

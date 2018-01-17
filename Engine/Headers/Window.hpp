@@ -15,12 +15,14 @@ namespace engine
 	{
 
 		SDL_Window *windowt;
-		const std::string wintitle;
+		
 
 	public:
 
-		Window(const std::string & title, int width, int height);
+		Window(const char * title, int width, int height);
 	   ~Window();
+
+	   const char * wintitle;
 
 	};
 

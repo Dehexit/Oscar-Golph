@@ -18,7 +18,7 @@ public:
 	~Scene();
 	
 	void link_window(Window window);
-	void parse_component(std::string scene); 
+	void execute(); 
 	
 
 };

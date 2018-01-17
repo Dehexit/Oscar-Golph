@@ -6,6 +6,7 @@
 
 Kernel::Kernel()
 {
+	//TODO
 }
 
 
@@ -18,23 +19,27 @@ Desde donde se añaden las tasks? Se pueden hacer de forma dinámica? En tiempo de
 poder modificarse las tareas? 
 */
 
+
+//Aqui es donde se ve que necesito la lista como una variable de la clase, al necesitar acceder a ella desde otro método. 
 void Kernel::add_task(Task * task)
 {
-
+	//TODO
 }
+
 
 
 //La clase Kernel y la clase ventana van por separado?
 //Cual es la forma correcta de incluir las cabeceras?
 void Kernel::execute()
 {
-	std::list<Task*> tasks; 
-	bool exit; 
-	
+	bool exit;
+	exit = true; 
 	while (!exit)
 	{
-		//Este loop recorre la lista de tareas que se hayan definido previamente?
-		for (auto * Task:tasks)
+		std::cout << "Hasta aqui" << std::endl; 
+		std::list<Task*> tasks;
+		
+		for (auto * Task : this->tasklistglobal)
 		{
 			//Task->run()
 			std::cout << "HI" << std::endl; 
