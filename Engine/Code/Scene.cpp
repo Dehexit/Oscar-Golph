@@ -14,7 +14,6 @@ Kernel kernel;
 
 Scene::Scene()
 {
-	execute(); 
 }
 
 

@@ -7,6 +7,11 @@
 Kernel::Kernel()
 {
 	//TODO
+	this->tasklistglobal = std::list<Task*>(); 
+	Task *newtask = new Task();
+
+	this->add_task(newtask);
+
 }
 
 
@@ -23,7 +28,7 @@ poder modificarse las tareas?
 //Aqui es donde se ve que necesito la lista como una variable de la clase, al necesitar acceder a ella desde otro método. 
 void Kernel::add_task(Task * task)
 {
-	//TODO
+	this->tasklistglobal.push_back(task);
 }
 
 
@@ -33,16 +38,22 @@ void Kernel::add_task(Task * task)
 void Kernel::execute()
 {
 	bool exit;
-	exit = true; 
+	exit = false; 
 	while (!exit)
 	{
-		std::cout << "Hasta aqui" << std::endl; 
-		std::list<Task*> tasks;
-		
-		for (auto * Task : this->tasklistglobal)
+		if (tasklistglobal.empty())
 		{
-			//Task->run()
-			std::cout << "HI" << std::endl; 
+			std::cout << "Task list empty" << std::endl;
+		}
+
+		else
+		{
+			for (auto & task : this->tasklistglobal)
+			{
+				std::cout << task->name << std::endl;
+
+				//Task->run()
+			}
 		}
 	}
 }

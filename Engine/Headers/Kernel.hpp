@@ -11,8 +11,12 @@ public:
 	~Kernel();
 	
 	void execute();
+	//Es buena idea crear una superclase con metodos basicos get y set virtuales? 
+	//Está implementado por defecto?
+
+	//La funcion addtask conviene ponerla para que se ejecute desde el propio kernel?
+
 	void add_task(Task *); 
-	void set_task_list(); 
 	std::list <Task*> get_task_list();
 
 	

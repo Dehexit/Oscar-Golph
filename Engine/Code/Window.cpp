@@ -14,13 +14,13 @@ namespace engine
 			SDL_Init (SDL_INIT_VIDEO);
 		}
 
-		windowt = SDL_CreateWindow(title, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, SDL_WINDOW_OPENGL);
-		this->wintitle = SDL_GetWindowTitle(windowt); 
+		window = SDL_CreateWindow(title, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, SDL_WINDOW_OPENGL);
+		this->wintitle = SDL_GetWindowTitle(window);
 	}
 
 	Window::~Window()
 	{
-		SDL_DestroyWindow(this->windowt);
+		SDL_DestroyWindow(this->window);
 	}
 
 }

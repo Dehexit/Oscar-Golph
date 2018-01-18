@@ -17,6 +17,11 @@ public:
 	Scene();
 	~Scene();
 	
+	/*
+	La función link window forma parte del kernel de tareas. Quitar cuando se pueda.
+	CHANGE
+	*/
+
 	void link_window(Window window);
 	void execute(); 
 	

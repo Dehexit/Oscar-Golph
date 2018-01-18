@@ -14,7 +14,7 @@ namespace engine
 	class Window
 	{
 
-		SDL_Window *windowt;
+		SDL_Window *window;
 		
 
 	public:

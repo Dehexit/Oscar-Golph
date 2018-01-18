@@ -3,7 +3,7 @@
 
 Task::Task()
 {
-
+	name = "Task generica";
 }
 
 
