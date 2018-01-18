@@ -1,3 +1,2 @@
 ﻿  main.cpp
-c:\users\alumno\documents\oscar-golph\demo\project\demo\main.cpp(12): warning C4101: 'x': unreferenced local variable
-LINK : fatal error LNK1104: cannot open file 'EngineEntrega.lib'
+  Demo.vcxproj -> C:\Users\Kahuna\Desktop\Programacion\Repositorios\Oscar-Golph\Demo\Project\Demo\Debug\Demo.exe

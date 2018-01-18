@@ -1,1 +1,20 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Platforms\Win32\PlatformToolsets\v141\Toolset.targets(34,5): error MSB8036: No se encontró la versión del SDK de Windows 10.0.16299.0. Instale la versión requerida del SDK de Windows o cambie la versión del SDK en las páginas de propiedades de proyecto o haciendo clic con el botón derecho en la solución y seleccionando "Redestinar solución".
+﻿  Window.cpp
+c:\users\alumno\desktop\gh\oscar-golph\engine\code\window.cpp(18): error C2678: binary '=': no operator found which takes a left-hand operand of type 'const std::string' (or there is no acceptable conversion)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.10.25017\include\xstring(2254): note: could be 'std::basic_string<char,std::char_traits<char>,std::allocator<char>> &std::basic_string<char,std::char_traits<char>,std::allocator<char>>::operator =(const _Elem)'
+          with
+          [
+              _Elem=char
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.10.25017\include\xstring(2249): note: or       'std::basic_string<char,std::char_traits<char>,std::allocator<char>> &std::basic_string<char,std::char_traits<char>,std::allocator<char>>::operator =(const _Elem *const )'
+          with
+          [
+              _Elem=char
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.10.25017\include\xstring(2221): note: or       'std::basic_string<char,std::char_traits<char>,std::allocator<char>> &std::basic_string<char,std::char_traits<char>,std::allocator<char>>::operator =(const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &)'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.10.25017\include\xstring(2184): note: or       'std::basic_string<char,std::char_traits<char>,std::allocator<char>> &std::basic_string<char,std::char_traits<char>,std::allocator<char>>::operator =(std::initializer_list<_Elem>)'
+          with
+          [
+              _Elem=char
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.10.25017\include\xstring(2072): note: or       'std::basic_string<char,std::char_traits<char>,std::allocator<char>> &std::basic_string<char,std::char_traits<char>,std::allocator<char>>::operator =(std::basic_string<char,std::char_traits<char>,std::allocator<char>> &&) noexcept(<expr>)'
+  c:\users\alumno\desktop\gh\oscar-golph\engine\code\window.cpp(18): note: while trying to match the argument list '(const std::string, const char *)'
