@@ -5,19 +5,26 @@
 #include <iostream>
 #include <string>
 #include <map>
+#include <rapidxml.hpp>
 
 
-
-std::map< std::string, Entity*> entities; 
 Kernel kernel; 
 
 
 Scene::Scene()
 {
+	//load y leer su contenido (el del xml). Usar rapidxml, le passa el contenido y lo interpreta. 
 }
 
 
 Scene::~Scene()
+{
+
+}
+
+
+//Carga de xml 
+void Scene::load()
 {
 
 }

@@ -22,9 +22,13 @@ public:
 	CHANGE
 	*/
 
+
+	//La edsscena tiene un mapa de entidades. La key es el nombre de la entidad.
+	std::map< std::string, std::shared_ptr<Entity>> entities;
+
 	void link_window(Window window);
 	void execute(); 
-	
+	void load(); 
 
 };
 
