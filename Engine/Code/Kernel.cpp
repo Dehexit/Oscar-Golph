@@ -50,7 +50,7 @@ void Kernel::execute()
 		{
 			for (auto & task : this->tasklistglobal)
 			{
-				std::cout << task->name << std::endl;
+				//std::cout << task->name << std::endl;
 
 				//Task->run()
 			}

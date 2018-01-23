@@ -1,19 +1,26 @@
 #include <Scene.hpp>
-#include <Window.hpp>
-#include <Entity.hpp>
-#include <Kernel.hpp>
 #include <iostream>
-#include <string>
-#include <map>
-#include <rapidxml.hpp>
+#include <rapidxml_utils.hpp>
+#include "rapidxml.hpp"
 
 
 Kernel kernel; 
 
 
-Scene::Scene()
+Scene::Scene(std::string & file_path)
 {
-	//load y leer su contenido (el del xml). Usar rapidxml, le passa el contenido y lo interpreta. 
+	//load y leer su contenido (el del xml). Usar rapidxml, le pasa el contenido y 
+	//lo interpreta. 
+
+	//como hacer comprobacion de que se le ha pasado la ruta correcta?
+	rapidxml::file <> xmlfile(file_path.c_str());
+	//std::fstream streamfile(xmlfile,std::fstream::in);
+	if (streamfile.good())
+	{
+
+	}
+
+
 }
 
 
@@ -29,12 +36,6 @@ void Scene::load()
 
 }
 
-
-//Change class. It's a debug one. 
-void Scene::link_window(Window window)
-{
-	std::cout << "Window name: " << window.wintitle << std::endl;
-}
 
 
 void Scene::execute()

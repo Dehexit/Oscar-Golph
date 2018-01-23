@@ -3,9 +3,13 @@
 //Kernel por escena. Añadir al crear la escena
 //Al cargar el xml se determian que modulos son necesarios dentro de esa escena. Se crean esos modulos y se añaden al kernel sus tareas si las tienen. 
 
-#include "Window.hpp"
+#include <Window.hpp>
+#include <Entity.hpp>
+#include <Kernel.hpp>
 #include <string>
 #include <memory>
+#include <map>
+
 
 using namespace engine;
 
@@ -14,19 +18,16 @@ class Scene
 {
 
 public:
-	Scene();
+	std::vector<std::string> xmldata; 
+	std::map< std::string, std::shared_ptr<Entity>> entities;
+	Kernel kernel; 
+
+
+	Scene(std::string & file_path);
 	~Scene();
 	
-	/*
-	La función link window forma parte del kernel de tareas. Quitar cuando se pueda.
-	CHANGE
-	*/
-
 
 	//La edsscena tiene un mapa de entidades. La key es el nombre de la entidad.
-	std::map< std::string, std::shared_ptr<Entity>> entities;
-
-	void link_window(Window window);
 	void execute(); 
 	void load(); 
 

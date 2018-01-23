@@ -1,0 +1,13 @@
+<scene>
+	<entity id="tree">
+		<components>
+			<component type="transform">
+				<position>10,0,-50</position>
+				<scale>.5</scale>
+			</component>
+			<component type="render">
+				<mesh path="tree.fbx"/>
+			</component>
+		</components>
+	</entity>
+</scene>
